@@ -1,0 +1,92 @@
+import { Code2, Atom, Rocket, Server, Database, Zap, Radio, Wind, Layers3 } from "lucide-react";
+
+export default function TechSection() {
+  const techs = [
+    {
+      icon: <Code2 size={22} />,
+      title: "TypeScript",
+      desc: "Type-safe architectures for large codebases",
+    },
+    {
+      icon: <Atom size={22} />,
+      title: "React",
+      desc: "Composable UI systems with strong DX",
+    },
+    {
+      icon: <Rocket size={22} />,
+      title: "Next.js",
+      desc: "High-performance SSR and routing at scale",
+    },
+    {
+      icon: <Server size={22} />,
+      title: "Node.js",
+      desc: "REST APIs and backend service implementation",
+    },
+    {
+      icon: <Database size={22} />,
+      title: "PostgreSQL",
+      desc: "Relational data modeling and optimization",
+    },
+    {
+      icon: <Zap size={22} />,
+      title: "Redis",
+      desc: "Pub/sub, caching, queues, and low-latency state",
+    },
+    {
+      icon: <Radio size={22} />,
+      title: "WebSockets",
+      desc: "Real-time, event-driven features at low latency",
+    },
+    {
+      icon: <Wind size={22} />,
+      title: "Tailwind CSS",
+      desc: "Fast, maintainable design systems",
+    },
+    {
+      icon: <Layers3 size={22} />,
+      title: "Turborepo",
+      desc: "Scalable monorepo developer workflows",
+    },
+  ];
+
+  return (
+    <div 
+      id="tech" 
+     className="min-h-[calc(100vh-80px)] w-full gap-y-8 gap-x-10 p-4 md:p-12 text-zinc-900"
+    >
+      <div className="space-y-3 max-w-4xl">
+        <span className="text-sm font-bold tracking-widest text-[#406BE0] uppercase">
+          Tech Stack
+        </span>
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 leading-tight font-grotesk">
+          Tools I trust for high-quality product engineering.
+        </h2>
+        <p className="text-base md:text-lg text-zinc-600 font-medium max-w-3xl leading-relaxed">
+          I combine modern frontend tooling with robust backend technologies to ship fast, scalable, and maintainable systems.
+        </p>
+      </div>
+
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-3">
+        {techs.map((tech, index) => (
+          <div 
+            key={index} 
+            className="bg-white/60 backdrop-blur-md border border-zinc-100 hover:border-blue-200/80 p-6 rounded-2xl shadow-xs flex flex-col items-start gap-3 transition-all duration-300 hover:shadow-md hover:shadow-blue-900/2 group"
+          >
+            <div className="text-[#406BE0] bg-blue-50/10 p-1 rounded-md group-hover:scale-105 transition-transform duration-300">
+              {tech.icon}
+            </div>
+            
+            <div className="space-y-1">
+              <h3 className="font-bold text-zinc-900 text-lg tracking-tight font-grotesk">
+                {tech.title}
+              </h3>
+              <p className="text-sm text-zinc-500 font-medium leading-normal">
+                {tech.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
