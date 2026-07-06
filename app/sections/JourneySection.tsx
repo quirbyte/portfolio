@@ -4,13 +4,13 @@ export default function JourneySection() {
     return (
         <div
             id="journey"
-            className="min-h-[calc(100vh-80px)] w-full flex flex-col gap-y-10 p-4 md:p-12 text-zinc-900"
+            className="w-full p-4 md:px-10 pt-30 text-zinc-900"
         >
             <div className="space-y-3 max-w-4xl">
                 <span className="text-sm font-bold tracking-widest text-[#406BE0] uppercase">
                     Experience and Journey
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 leading-tight font-grotesk">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight mt-2 text-zinc-900 leading-tight font-grotesk">
                     Always shipping, always leveling up.
                 </h2>
                 <p className="text-base md:text-lg text-zinc-600 font-medium max-w-3xl leading-relaxed">
@@ -50,15 +50,15 @@ export default function JourneySection() {
                             </div>
                             <div className="min-w-0">
                                 <h3 className="font-bold text-base text-zinc-900 tracking-tight truncate">
-                                    B.Tech, Computer Science
+                                    B.Tech, Computer Science ( AI & ML )
                                 </h3>
                                 <p className="text-xs font-medium text-zinc-400 mt-0.5 truncate">
-                                    Chaudhary Charan Singh University, Meerut
+                                    Kalinga Institute of Industrial Technology
                 </p>
                             </div>
                         </div>
                         <span className="text-xs font-bold text-zinc-400 whitespace-nowrap hidden sm:inline">
-                            2023 — 2027
+                            2024 — 2028 ( CGPA : 8.63/10.00)
                         </span>
                     </div>
 

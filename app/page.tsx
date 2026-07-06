@@ -9,7 +9,7 @@ import TechSection from "./sections/TechSection";
 
 export default function HomePage() {
   return <>
-    <div className="relative text-white bg-linear-to-b from-[#C3E1FB] to-transparent min-h-screen py-4 lg:px-13 px-4">
+    <div className="relative text-white bg-linear-to-b from-[#C3E1FB] to-transparent min-h-screen p-2 lg:px-13">
       <Navbar />
       <HomeSection />
       <AboutSection />

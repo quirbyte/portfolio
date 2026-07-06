@@ -4,13 +4,13 @@ export default function AboutSection() {
   return (
     <div 
       id="about" 
-      className="min-h-[calc(100vh-80px)] w-full gap-y-8 gap-x-10 p-4 md:p-12 text-zinc-900"
+      className="w-full p-4 md:px-10 pt-30 text-zinc-900"
     >
       <div className="space-y-3 max-w-4xl">
         <span className="text-sm font-bold tracking-widest text-[#406BE0] uppercase">
           About Me
         </span>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 leading-tight font-grotesk">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mt-2 text-zinc-900 leading-tight font-grotesk">
           I build real-time systems that hold up in production.
         </h2>
         <p className="text-base md:text-lg text-zinc-600 font-medium max-w-3xl leading-relaxed">
@@ -21,9 +21,11 @@ export default function AboutSection() {
       <div className="w-full flex flex-col lg:flex-row items-stretch justify-between gap-8 lg:gap-10 pt-3">
         
         <div className="flex-1 bg-white/50 backdrop-blur-md border border-white/60 p-8 rounded-4xl shadow-xl shadow-blue-900/5 flex flex-col justify-center gap-6">
-          <p className="text-zinc-700 text-sm md:text-md font-medium leading-relaxed">
+          <p className="text-zinc-700 text-lg md:text-md font-medium leading-relaxed">
             My core strength sits at the intersection of backend depth and frontend clarity: I design WebSocket and Redis pub/sub pipelines, build secure REST APIs with JWT and role-based access, and ship to AWS with Docker and CI/CD.
-            I've shipped a real-time crypto trading platform, a collaborative whiteboard, and a visual AI workflow engine — and I keep sharpening DSA, system design, and real-world architecture along the way.
+          </p>
+          <p className="text-zinc-700 text-lg md:text-md font-medium leading-relaxed">
+            I've shipped a Multi Tenant SaaS Ticket Booking platform and a collaborative whiteboard — and I keep sharpening DSA, system design, and real-world architecture along the way.
           </p>
         </div>
         <div className="w-full lg:max-w-xl flex flex-col gap-4">

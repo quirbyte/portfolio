@@ -8,12 +8,12 @@ export default function Navbar(){
                 <p className="font-semibold text-zinc-600 text-sm">Portfolio</p>
             </div>
             <div className="hidden md:flex gap-1 font-semibold text-sm">
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Home</a>
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">About</a>
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Tech</a>
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Projects</a>
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Journey</a>
-                <a className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">About</a>
+                <a href="#home" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Home</a>
+                <a href="#about" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">About</a>
+                <a href="#tech" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Tech</a>
+                <a href="#projects" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Projects</a>
+                <a href="#journey" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Journey</a>
+                <a href="#contact" className="hover:bg-zinc-50/60 p-2 px-4 rounded-full hover:cursor-pointer">Contact Me</a>
             </div>
             <div className="flex gap-5">
                 <button className="hidden bg-[#406BE0] py-2 px-4 md:flex items-center  text-white font-semibold text-sm rounded-full gap-2">

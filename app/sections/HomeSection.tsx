@@ -4,9 +4,9 @@ export default function HomeSection() {
     return (
         <div
             id="home"
-            className="min-h-[calc(100vh-80px)] w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-8 gap-x-10 p-4 md:p-12 text-zinc-900"
+            className="w-full flex flex-col lg:flex-row items-start justify-start p-4 pt-5 md:p-10 lg:pt-20 lg:justify-between text-zinc-900"
         >
-            <div className="flex-1 flex flex-col items-start gap-6 max-w-2xl md:-ml-11 lg:ml-0">
+            <div className="flex flex-col items-start gap-6 max-w-2xl mb-7 lg:mb-0">
                 <div className="flex items-center gap-2 bg-white/80 border border-blue-200/60 px-4 py-1.5 rounded-full text-xs font-semibold text-[#406BE0] shadow-xs tracking-wide uppercase">
                     <span className="w-1.5 h-1.5 bg-[#406BE0] rounded-full animate-pulse" />
                     Open to impactful opportunities
@@ -25,23 +25,24 @@ export default function HomeSection() {
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 mt-4">
-                    <button className="bg-[#3B66DE] hover:bg-[#2F55C7] text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-md shadow-blue-500/10 hover:cursor-pointer">
+                    <a href="#projects" className="bg-[#3B66DE] hover:bg-[#2F55C7] text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-md shadow-blue-500/10 hover:cursor-pointer">
                         View Projects <ArrowRight size={18} />
-                    </button>
+                    </a>
 
                     <button className="border border-blue-300/50 hover:border-zinc-300 text-zinc-700 font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all hover:cursor-pointer">
                         <Download size={18} /> Download Resume
                     </button>
 
-                    <button className="text-zinc-600 hover:text-zinc-900 font-medium px-4 py-3 rounded-full transition-all hover:cursor-pointer">
+                    <a href="#contact" className="text-zinc-600 hover:text-zinc-900 font-medium px-4 py-3 rounded-full transition-all hover:cursor-pointer">
                         Contact Me
-                    </button>
+                    </a>
                 </div>
 
                 <div className="flex items-center gap-4 mt-6">
                     {/* GitHub */}
                     <a
-                        href="#"
+                        href="https://github.com/quirbyte"
+                        target="_blank"
                         className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,7 +53,8 @@ export default function HomeSection() {
 
                     {/* LinkedIn */}
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/quirbyte/"
+                        target="_blank"
                         className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -64,7 +66,8 @@ export default function HomeSection() {
 
                     {/* X (Twitter) */}
                     <a
-                        href="#"
+                        href="https://x.com/quirbyte"
+                        target="_blank"
                         className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -75,7 +78,8 @@ export default function HomeSection() {
 
                     {/* LeetCode (Trophy) */}
                     <a
-                        href="#"
+                        href="https://leetcode.com/u/soumyadip03112005/"
+                        target="_blank"
                         className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -89,7 +93,8 @@ export default function HomeSection() {
 
                     {/* Peerlist (Layers) */}
                     <a
-                        href="#"
+                        href="https://peerlist.io/soumyadipmondal"
+                        target="_blank"
                         className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -119,12 +124,12 @@ export default function HomeSection() {
 
                 <div className="grid grid-cols-2 gap-4 mt-2">
                     <div className="border border-zinc-200/60 bg-white/50 p-4 rounded-2xl">
-                        <p className="text-2xl font-bold text-zinc-900">10+</p>
+                        <p className="text-2xl font-bold text-zinc-900">7+</p>
                         <p className="text-xs text-zinc-500 font-medium mt-0.5">Production-focused builds</p>
                     </div>
 
                     <div className="border border-zinc-200/60 bg-white/50 p-4 rounded-2xl">
-                        <p className="text-2xl font-bold text-zinc-900">24/7</p>
+                        <p className="text-2xl font-bold text-zinc-900">24 x 7</p>
                         <p className="text-xs text-zinc-500 font-medium mt-0.5">Learning mindset</p>
                     </div>
                 </div>
