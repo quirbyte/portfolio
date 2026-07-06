@@ -1,6 +1,17 @@
-import Card from "../components/Card";
+import Card, { CardProps } from "../components/Card";
 
 export default function ProjectsSection() {
+
+    const projects:CardProps[] = [{
+        id : 1,
+        title : "iukj23f",
+        desc : "ef32f3f",
+        img : "img1.JPG",
+        codeLink : "ergg3g3",
+        demoLink : "wef33f",
+        tags : []
+    }];
+
     return <div
         id="projects"
         className="w-full p-4 md:px-10 pt-30 text-zinc-900"
@@ -18,12 +29,11 @@ export default function ProjectsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-3">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {
+                projects.map((project)=>(
+                    <Card key={project.id} project={project} />
+                ))
+            }
         </div>
     </div>
 }

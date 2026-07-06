@@ -59,7 +59,7 @@ export default function ContactSection() {
                 <div className="flex flex-wrap items-center justify-center gap-3 w-full border-t border-zinc-100 pt-6">
 
                     <a
-                        href="#"
+                        href="https://github.com/quirbyte"
                         target="_blank"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 font-semibold text-xs sm:text-sm transition-colors shadow-3xs cursor-pointer"
                     >
@@ -71,7 +71,7 @@ export default function ContactSection() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/quirbyte/"
                         target="_blank"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 font-semibold text-xs sm:text-sm transition-colors shadow-3xs cursor-pointer"
                     >
@@ -84,7 +84,7 @@ export default function ContactSection() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://x.com/quirbyte"
                         target="_blank"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 font-semibold text-xs sm:text-sm transition-colors shadow-3xs cursor-pointer"
                     >
@@ -96,7 +96,7 @@ export default function ContactSection() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://leetcode.com/u/soumyadip03112005/"
                         target="_blank"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 font-semibold text-xs sm:text-sm transition-colors shadow-3xs cursor-pointer"
                     >
@@ -105,7 +105,7 @@ export default function ContactSection() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://peerlist.io/soumyadipmondal"
                         target="_blank"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 font-semibold text-xs sm:text-sm transition-colors shadow-3xs cursor-pointer"
                     >
