@@ -58,7 +58,7 @@ export default function ContactSection() {
 
                     <motion.a 
                         {...buttonHoverProps}
-                        href="#"
+                        href="/resume.pdf"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#f8fafc]/60 border border-zinc-200/60 text-zinc-800 font-semibold text-sm transition-colors shadow-2xs cursor-pointer dark:border-zinc-800 dark:bg-[#0A0F1C] dark:hover:bg-[#131929]"
