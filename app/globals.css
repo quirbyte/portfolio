@@ -8,3 +8,5 @@
 :root {
   font-family: var(--font-manrope);
 }
+
+@variant dark (&:where(.dark, .dark *));

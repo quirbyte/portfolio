@@ -1,4 +1,6 @@
-import { Terminal, BriefcaseBusinessIcon, Globe, Trophy, Layers, ArrowRight, Download } from "lucide-react";
+"use client";
+import { BriefcaseBusinessIcon, ArrowRight, Download } from "lucide-react";
+import { easeIn, easeInOut, motion } from "motion/react";
 
 export default function HomeSection() {
     return (
@@ -7,33 +9,41 @@ export default function HomeSection() {
             className="w-full flex flex-col lg:flex-row items-start justify-start p-4 pt-5 md:p-10 lg:pt-20 lg:justify-between text-zinc-900"
         >
             <div className="flex flex-col items-start gap-6 max-w-2xl mb-7 lg:mb-0">
-                <div className="flex items-center gap-2 bg-white/80 border border-blue-200/60 px-4 py-1.5 rounded-full text-xs font-semibold text-[#406BE0] shadow-xs tracking-wide uppercase">
-                    <span className="w-1.5 h-1.5 bg-[#406BE0] rounded-full animate-pulse" />
+                <div className="flex items-center gap-2 bg-white/80 dark:bg-[#1A4158] dark:border-[#1A4158] border border-blue-200/60 px-4 py-1.5 rounded-full text-xs font-semibold text-[#406BE0] dark:text-blue-300 shadow-xs tracking-widest uppercase">
+                    <span className="w-1.5 h-1.5 bg-[#406BE0] dark:bg-blue-300 rounded-full animate-pulse" />
                     Open to impactful opportunities
                 </div>
                 <div className="space-y-2 font-grotesk">
-                    <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900">
+                    <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white">
                         Soumyadip Mondal
                     </h1>
-                    <p className="text-2xl lg:text-3xl font-semibold text-[#406BE0]">
+                    <p className="text-2xl lg:text-3xl font-semibold text-[#406BE0] dark:text-blue-400">
                         Full Stack Developer
                     </p>
                 </div>
 
-                <p className="text-lg lg:text-xl text-zinc-600 font-medium leading-relaxed max-w-xl">
+                <p className="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed max-w-xl">
                     Building production-grade, real-time web applications. Open to Full Stack, Backend, and SDE roles.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 mt-4">
-                    <a href="#projects" className="bg-[#3B66DE] hover:bg-[#2F55C7] text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-md shadow-blue-500/10 hover:cursor-pointer">
+                    <motion.a whileHover={{
+                        y: -1,
+                        transition: { duration: 0.01, ease: "easeOut" },
+                        boxShadow: "0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                    }} href="#projects" className="bg-[#3B66DE] text-white dark:bg-blue-400 dark:text-black font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-md shadow-blue-500/10 hover:cursor-pointer">
                         View Projects <ArrowRight size={18} />
-                    </a>
+                    </motion.a>
 
-                    <button className="border border-blue-300/50 hover:border-zinc-300 text-zinc-700 font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all hover:cursor-pointer">
+                    <motion.a href="/resume.pdf" whileHover={{
+                        y: -1,
+                        transition: { duration: 0.01, ease: "easeOut" },
+                        boxShadow: "0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                    }} className="border border-blue-300/50 hover:border-zinc-300 text-zinc-700 dark:text-white dark:border-zinc-700 font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all hover:cursor-pointer">
                         <Download size={18} /> Download Resume
-                    </button>
+                    </motion.a>
 
-                    <a href="#contact" className="text-zinc-600 hover:text-zinc-900 font-medium px-4 py-3 rounded-full transition-all hover:cursor-pointer">
+                    <a href="#contact" className="text-zinc-600 dark:text-white font-medium transition-all hover:cursor-pointer px-6 py-3 hover:bg-white dark:hover:bg-[#0B364D] rounded-full">
                         Contact Me
                     </a>
                 </div>
@@ -43,7 +53,7 @@ export default function HomeSection() {
                     <a
                         href="https://github.com/quirbyte"
                         target="_blank"
-                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
+                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white dark:text-white dark:border-blue-900 dark:hover:bg-black dark:hover:border-black transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
@@ -55,7 +65,7 @@ export default function HomeSection() {
                     <a
                         href="https://www.linkedin.com/in/quirbyte/"
                         target="_blank"
-                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
+                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white dark:text-white dark:border-blue-900 dark:hover:bg-black dark:hover:border-black  transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -68,7 +78,7 @@ export default function HomeSection() {
                     <a
                         href="https://x.com/quirbyte"
                         target="_blank"
-                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
+                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white dark:text-white dark:border-blue-900 dark:hover:bg-black dark:hover:border-black  transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
@@ -80,7 +90,7 @@ export default function HomeSection() {
                     <a
                         href="https://leetcode.com/u/soumyadip03112005/"
                         target="_blank"
-                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
+                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white dark:text-white dark:border-blue-900 dark:hover:bg-black dark:hover:border-black  transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
@@ -95,7 +105,7 @@ export default function HomeSection() {
                     <a
                         href="https://peerlist.io/soumyadipmondal"
                         target="_blank"
-                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white transition-all shadow-3xs"
+                        className="w-10 h-10 rounded-full border border-blue-300/50 bg-#C3E1FB flex items-center justify-center text-black hover:border-zinc-300 hover:bg-white dark:text-white dark:border-blue-900 dark:hover:bg-black dark:hover:border-black  transition-all shadow-3xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="m12 3-10 5 10 5 10-5-10-5Z"></path>
@@ -106,31 +116,31 @@ export default function HomeSection() {
                 </div>
             </div>
 
-            <div className="w-full lg:max-w-md bg-white/70 backdrop-blur-md border border-white/60 p-8 rounded-4xl shadow-xl shadow-blue-900/5 flex flex-col gap-6">
+            <div className="w-full lg:max-w-md bg-white/70 dark:bg-[#0E1F33] dark:border-[#0E1F33] backdrop-blur-md border border-white/60 p-8 rounded-4xl shadow-xl shadow-blue-900/5 flex flex-col gap-6">
 
-                <div className="self-start flex items-center gap-2 bg-zinc-50 border border-zinc-200/80 px-3 py-1 rounded-md text-xs font-medium text-zinc-600">
-                    <BriefcaseBusinessIcon size={14} className="text-blue-500" />
+                <div className="self-start flex items-center gap-2 bg-zinc-50 border border-zinc-200/80 dark:bg-black dark:border-zinc-800 rounded-full px-3 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                    <BriefcaseBusinessIcon size={14} className="text-blue-500 dark:text-blue-300" />
                     Professional Focus
                 </div>
 
                 <div className="space-y-3">
-                    <h2 className="text-xl md:text-2xl font-bold tracking-tight text-zinc-900 leading-snug">
+                    <h2 className="text-xl md:text-2xl font-bold tracking-tight text-zinc-900 dark:text-white leading-snug">
                         Scalable backend + clean frontend, built for real product growth.
                     </h2>
-                    <p className="text-xs md:text-sm text-zinc-500 leading-relaxed font-medium">
+                    <p className="text-xs md:text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed font-medium">
                         I care about architecture, developer experience, and interfaces that feel polished from the first interaction.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 mt-2">
-                    <div className="border border-zinc-200/60 bg-white/50 p-4 rounded-2xl">
-                        <p className="text-2xl font-bold text-zinc-900">7+</p>
-                        <p className="text-xs text-zinc-500 font-medium mt-0.5">Production-focused builds</p>
+                    <div className="border border-zinc-200/60 bg-white/50 dark:bg-black dark:border-zinc-800  p-4 rounded-2xl">
+                        <p className="text-2xl font-bold text-zinc-900 dark:text-white">7+</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium mt-0.5">Production-focused builds</p>
                     </div>
 
-                    <div className="border border-zinc-200/60 bg-white/50 p-4 rounded-2xl">
-                        <p className="text-2xl font-bold text-zinc-900">24 x 7</p>
-                        <p className="text-xs text-zinc-500 font-medium mt-0.5">Learning mindset</p>
+                    <div className="border border-zinc-200/60 bg-white/50 dark:bg-black dark:border-zinc-800 p-4 rounded-2xl">
+                        <p className="text-2xl font-bold text-zinc-900 dark:text-white">24 x 7</p>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium mt-0.5">Learning mindset</p>
                     </div>
                 </div>
 
